@@ -18,7 +18,7 @@ public class UserController {
 
     @RequestMapping("/")
     @ResponseBody
-    public User getRecentUser(){
+    public HashMap<String,String> getRecentUser(){
         return userService.getRecentUser();
     }
 }

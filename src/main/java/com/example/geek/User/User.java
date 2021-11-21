@@ -18,8 +18,10 @@ public class User {
     private Long age;
 
     @Builder
-    public  User(String name,Long age){
-        this.name=name;
-        this.age=age;
+    public User(ObjectId id, String name, Long age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
     }
+
 }
